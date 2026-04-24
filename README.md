@@ -1,4 +1,4 @@
-# 📘 Clean Code — Summary & Notes
+# Clean Code — Summary & Notes
 
 > A concise summary of *Clean Code by Robert C. Martin (Uncle Bob)*
 
@@ -8,18 +8,18 @@
 
 ---
 
-## 📚 About
+## About
 
 This repository contains a **clear and structured summary** of key chapters from the book:
 
 > **Clean Code: A Handbook of Agile Software Craftsmanship**  
 > 👤 Author: Robert C. Martin
 
-🎯 Goal: Help developers write **clean, readable, and maintainable code**
+ Goal: Help developers write **clean, readable, and maintainable code**
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
 - [Meaningful Names](#-1-meaningful-names-chapter-2)
 - [Functions](#-2-functions-chapter-3)
@@ -30,7 +30,7 @@ This repository contains a **clear and structured summary** of key chapters from
 
 ---
 
-## 🔹 1. Meaningful Names (Chapter 2)
+## 1. Meaningful Names (Chapter 2)
 
 Good naming is critical in programming.
 
@@ -39,17 +39,17 @@ Good naming is critical in programming.
 - Be clear and unambiguous  
 - Be easy to search and pronounce  
 
-❌ Avoid:
+ Avoid:
 - Misleading names (`accountList` if not a list)
 - Single-letter names (except in small scopes)
 
-📌 Rules:
+ Rules:
 - Classes → **Nouns**
 - Methods → **Verbs**
 
 ---
 
-## 🔹 2. Functions (Chapter 3)
+## 2. Functions (Chapter 3)
 
 Functions should be:
 
@@ -57,7 +57,7 @@ Functions should be:
 ✔ Focused  
 ✔ Doing **one thing only**
 
-📏 Guidelines:
+ Guidelines:
 - Prefer < 20 lines
 - Keep same level of abstraction
 
@@ -67,34 +67,34 @@ Functions should be:
 - 2 → Acceptable  
 - 3+ → Avoid  
 
-⚠️ A function should be:
+ A function should be:
 - A **Command** OR
 - A **Query**
-- ❌ Not both
+-  Not both
 
 ---
 
-## 🔹 3. Comments (Chapter 4)
+## 3. Comments (Chapter 4)
 
 > "Comments are a necessary evil"
 
-💡 Prefer **clean code over comments**
+ Prefer **clean code over comments**
 
-### ✅ Good comments:
+### Good comments:
 - Legal info
 - Complex explanations
 - Design decisions
 
-### ❌ Bad comments:
+### Bad comments:
 - Redundant
 - Outdated
 - Commented-out code
 
-👉 Truth lives in the **code**, not in comments.
+ Truth lives in the **code**, not in comments.
 
 ---
 
-## 🔹 4. Objects & Data Structures (Chapter 6)
+## 4. Objects & Data Structures (Chapter 6)
 
 ### Objects:
 - Hide data
@@ -104,17 +104,19 @@ Functions should be:
 - Expose data
 - No behavior
 
-📌 Trade-off:
+ Trade-off:
 - Procedural → easy to add functions
 - OOP → easy to add new classes
 
 ---
 
-## 📏 Law of Demeter
+## Law of Demeter
 
 > "Talk to friends, not strangers"
 
 Avoid deep chaining:
 
 ```js
-obj.getA().getB().getC().doSomething(); // ❌ Bad
+obj.getA().getB().getC().doSomething(); // Bad
+
+
